@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<User>
+@{
+    foreach (User u in Model)
+    {
+        <div>
+            <h2>Welcome!</h2>
+            <h2>@u.FirstName</h2>
+            <h2>@u.LastName</h2>
+        </div>
+    }
+}
