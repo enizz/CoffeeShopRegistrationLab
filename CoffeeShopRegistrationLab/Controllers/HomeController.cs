@@ -42,10 +42,10 @@ namespace CoffeeShopRegistrationLab.Controllers
             return RedirectToAction("GetUser", user);
         }
 
-        public IActionResult GetUser()
+        public IActionResult GetUser(User user)//take in User user
         {
-            List<User> users = context.Users.ToList();
-            return View(users);
+            //List<User> users = context.Users.ToList();
+            return View(user);
         }
         
     }
